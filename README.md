@@ -120,4 +120,4 @@ If you encounter any issues or have suggestions, please open an issue on GitHub 
 
 ---
 
-Made with ❤️ by [Aditya Sharma]
+Made with ❤️ by Aditya Sharma
