@@ -23,7 +23,6 @@ const RecipeSearch = () => {
     category: '',
     cuisine: ''
   });
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const fetchFilters = async () => {
@@ -82,10 +81,6 @@ const RecipeSearch = () => {
     }));
   };
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(prev => !prev);
-  };
-
   if (loading) {
     return <Loader />;
   }
@@ -138,17 +133,6 @@ const RecipeSearch = () => {
           </div>
         </form>
 
-        <button
-          className="mobile-menu-button"
-          onClick={toggleMobileMenu}
-          aria-label="Toggle menu"
-          aria-expanded={isMobileMenuOpen} // Added ARIA attribute
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
         {error && <p className="error">{error}</p>}
 
         <div className="recipe-grid">
@@ -175,4 +159,4 @@ const RecipeSearch = () => {
   );
 };
 
-export default RecipeSearch;
+export default RecipeSearch; 
