@@ -5,6 +5,7 @@ import Loader from '../../components/common/Loader';
 import './Home.css';
 
 const Home = () => {
+  console.log("here")
   const [featuredRecipe, setFeaturedRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -38,6 +39,7 @@ const Home = () => {
   }
 
   return (
+
     <div className="home">
       <section className="hero">
         <div className="hero-content">
